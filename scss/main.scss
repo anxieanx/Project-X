@@ -1,0 +1,35 @@
+$primary-color: #59C4F8;
+$background-color: #F9F9F9;
+$text-color: #222222;
+$cta-color: #FF3478;
+
+body {
+	color: $text-color;
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 70%;
+	margin: 0 auto;
+}
+
+a {
+	color: $text-color;
+	text-decoration: none;
+	padding: 10px 15px;
+}
+
+a:hover {
+ color: $primary-color;
+}
+
+@import "btn.scss";
+@import "cta.scss";
+@import "features.scss";
+@import "footer.scss";
+@import "header.scss";
+@import "nav.scss";
+@import "pricing.scss";
+@import "section.scss";

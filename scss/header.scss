@@ -1,0 +1,17 @@
+.header {
+	display: flex;
+
+	&__title {
+		width: 40%;
+	}
+
+	&__img {
+		width: 60%;
+	}
+
+	&__img img {
+		max-width: 100%;
+		border-radius: 3px;
+		box-shadow: 0 3px 8px 0 rgba(34,34,34,0.6);
+	}
+}

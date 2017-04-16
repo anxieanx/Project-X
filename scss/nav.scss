@@ -1,0 +1,18 @@
+.nav {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	
+	&__logo img {
+		width: 48px;
+	}
+
+	&__links li {
+		display: inline;
+		list-style: none;
+	}
+
+	&__links a {
+		padding: 10px 20px;
+	}
+}

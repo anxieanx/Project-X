@@ -1,0 +1,27 @@
+.features {
+	text-align: center;
+	padding: 50px 0; 
+
+	&__items {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	&__item {
+		width: 26%;
+	}
+
+	&__items img {
+		padding-top: 30px;
+	}
+
+	&--top {
+		font-size: 18px;
+	}
+
+	&--top h1 {
+		color: $primary-color;
+	}
+}

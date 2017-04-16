@@ -1,0 +1,29 @@
+.footer {
+	color: $background-color;
+	background-color: #273444;
+	text-align: center;
+	padding: 10px 0 5px 0;
+
+	li {
+		display: inline;
+		list-style: none;
+	}
+
+	a {
+		color: $background-color;
+	}
+
+	a:hover {
+		color: $primary-color;
+	}
+
+	img {
+		width: 48px;
+		padding: 10px;
+	}
+
+	p:nth-child(5) {
+		margin: 0;
+		font-size: 12px;
+	}
+}

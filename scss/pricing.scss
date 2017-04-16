@@ -1,0 +1,55 @@
+.pricing {
+	padding: 50px 0;
+
+	h1 {
+		text-align: center;
+		padding-bottom: 30px;		
+	}
+	
+	&__items {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	&__item {
+		width: 24%;
+		height: 400px;
+		text-align: center;
+		border: 1px solid #CCCCCC;
+		padding: 30px 0 15px 0;
+		position: relative;
+
+		p {
+			color: #A2ABB1;
+			padding-bottom: 30px;
+		}
+
+		li {
+			color: #A2ABB1;
+			font-size: 14px;
+			text-align: left;
+			list-style: none;
+			padding: 5px 10px;
+		}
+
+		span {
+			color: #5DEB92;
+		}
+
+		h3 {
+			position: absolute;
+			bottom: 80px;
+			left: 50%;
+			margin-left: -50px;
+		}
+
+		.btn {
+			position: absolute;
+			bottom: 20px;
+			right: 50%;
+			margin-right: -63px;
+		}
+	}
+}
