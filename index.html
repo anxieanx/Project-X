@@ -29,10 +29,12 @@
 
 	<div class="header">
 		<div class="header__title">
-			<h1>Client Feedback Has Never Been This Easy</h1>
-			<h2>Stop wasting time with messy emails and vague screenshots</h2>
-			<a href="#" class="btn btn--primary">Get Started Free!</a>
-			<a href="#" class="btn btn--secondary">Play Video</a>
+			<h1>Client Feedback <br /> Has Never Been <br /> This Easy</h1>
+			<h2>Stop wasting time with messy <br /> emails and vague screenshots</h2>
+			<div class="header__btns">
+				<a href="#" class="btn btn--primary">Get Started Free!</a>
+				<a href="#" class="btn btn--secondary">Play Video</a>
+			</div>
 		</div>
 		<div class="header__img">
 			<img src="img/sunrise.jpg" alt="sunrise" />			
@@ -60,7 +62,7 @@
 		</div>
 	</div>
 
-	<div class="container--fluid">
+	<div class="sections">
 		<div class="section">
 			<div class="section__text">
 				<h1>Save time and money with live website feedback</h1>
@@ -134,7 +136,7 @@
 				<ul>
 					<li><span>&#10004;</span> A single Project</li>
 				</ul>
-				<h3><sup>$</sup>0/Month</h3>
+				<h3 class="price"><sup>$</sup>0<small>/Month</small></h3>
 				<a href="#" class="btn btn--primary">Get Started</a>
 			</div>
 			<div class="pricing__item">
@@ -144,10 +146,11 @@
 					<li><span>&#10004;</span> Up to 3 Projects</li>
 					<li><span>&#10004;</span> 2 Additional Developers</li>
 				</ul>
-				<h3><sup>$</sup>35/Month</h3>
+				<h3 class="price"><sup>$</sup>35<small>/Month</small></h3>
 				<a href="#" class="btn btn--primary">Get Started</a>
 			</div>
 			<div class="pricing__item">
+				<div class="best-tag"></div>
 				<h2>Team</h2>
 				<p>Small agencies</p>
 				<ul>
@@ -155,7 +158,7 @@
 					<li><span>&#10004;</span> 5 Additional Developers</li>
 					<li><span>&#10004;</span> Custom Branding</li>
 				</ul>
-				<h3><sup>$</sup>60/Month</h3>
+				<h3 class="price"><sup>$</sup>60<small>/Month</small></h3>
 				<a href="#" class="btn btn--primary">Get Started</a>
 			</div>
 			<div class="pricing__item">
@@ -166,7 +169,7 @@
 					<li><span>&#10004;</span> 20 Additional Developers</li>
 					<li><span>&#10004;</span> Custom Branding</li>
 				</ul>
-				<h3><sup>$</sup>150/Month</h3>
+				<h3 class="price"><sup>$</sup>150<small>/Month</small></h3>
 				<a href="#" class="btn btn--primary">Get Started</a>
 			</div>
 		</div>
@@ -183,10 +186,10 @@
 		<li><a href="#">Contact</a></li>
 		<li><a href="#">Blog</a></li>
 	</ul>
-	<p>Subscribe to our newsletter and stay updated with everything we do</p>
-	<form>
-		<input type="text" name="">
-		<button>Send</button>
+	<p>Subscribe to our newsletter and stay <br /> updated with everything we do</p>
+	<form class="form">
+		<input type="text" name="subscribe-form" class="form__input" placeholder="Email" />
+		<button class="form__btn">Send</button>
 	</form>
 	<img src="img/alien_pixel.png" alt="logo" />
 	<p>&copy; Webscope 2017</p>
