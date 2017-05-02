@@ -1,35 +1,19 @@
-$primary-color: #59C4F8;
-$background-color: #F9F9F9;
-$text-color: #222222;
-$cta-color: #FF3478;
+@charset 'utf-8';
 
-body {
-	color: $text-color;
-	font-family: 'Raleway', sans-serif;
-	margin: 0;
-	padding: 0;
-}
+@import 'abstracts/variables';
 
-.container {
-	width: 70%;
-	margin: 0 auto;
-}
+@import 'base/base';
 
-a {
-	color: $text-color;
-	text-decoration: none;
-	padding: 10px 15px;
-}
+@import 'components/btn';
+@import 'components/form';
+@import 'components/price';
+@import 'components/tag';
 
-a:hover {
- color: $primary-color;
-}
-
-@import "btn.scss";
-@import "cta.scss";
-@import "features.scss";
-@import "footer.scss";
-@import "header.scss";
-@import "nav.scss";
-@import "pricing.scss";
-@import "section.scss";
+@import 'layout/cta';
+@import 'layout/features';
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/nav';
+@import 'layout/footer';
+@import 'layout/pricing';
+@import 'layout/section';

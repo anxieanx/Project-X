@@ -1,22 +1,28 @@
 .btn {
-	padding: 10px 20px;
+	text-align: center;
 	border: 1px solid $primary-color;
 	border-radius: 3px;
+	padding: 10px 20px;
 
 	&--primary {
 		color: $background-color;
 		background-color: $primary-color;
+		flex-grow: 1;
 	}
 
 	&--primary:hover {
-		color: $text-color;
+		color: $primary-color;
+		background-color: $background-color;
 	}
 
 	&--secondary {
 		color: $primary-color;
+		flex-grow: 4;
+		margin-left: 5px;
 	}
 
 	&--secondary:hover {
-		color: $text-color;
+		color: $background-color;
+		background-color: $primary-color;
 	}
 }

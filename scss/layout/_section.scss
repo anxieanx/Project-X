@@ -1,0 +1,45 @@
+/**
+ * 1. Magic nubmer, nema nikakve matematike jednostavno odgovara
+ */
+.sections {
+	padding-bottom: 50px;
+	margin-left: -21.4%;
+	margin-right: -21.4%;
+}
+
+.section {
+	display: flex;
+	margin-top: 100px;
+
+	&__text {
+		width: 40%;
+		text-align: center;
+		padding: 50px;
+
+		&--reverse {
+			order: 2;
+		}
+
+		h1 {
+			line-height: 50px; /* [1] */
+		}
+
+		hr {
+			width: 50%;
+		}
+	}
+
+	&__img {
+		width: 60%;
+
+		&--reverse {
+			order: 1;
+		}
+	}
+
+	&__img img {
+		max-width: 100%;
+		border-radius: 3px;
+		box-shadow: 0 3px 8px 0 rgba(34,34,34,0.6);
+	}
+}

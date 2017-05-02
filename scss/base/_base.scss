@@ -1,0 +1,25 @@
+/**
+ * 1. Magic nubmer, nema nikakve matematike jednostavno odgovara
+ */
+body {
+	color: $text-color;
+	font-family: 'Raleway', sans-serif;
+	line-height: 28px; /* [1] */
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 70%;
+	margin: 0 auto;
+}
+
+a {
+	color: $text-color;
+	text-decoration: none;
+	padding: 10px 15px;
+}
+
+a:hover {
+ color: $primary-color;
+}
