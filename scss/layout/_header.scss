@@ -10,6 +10,10 @@
 		width: 40%;
 
 		h1 {
+			// Browser ima ugradjene stilove za header velicine,
+			// ali svakako bi trebala u css-u podesiti konkretno
+			// font-size zajedno s line-height, jer moze se dogoditi
+			// da razliciti browseri imaju razlicite predefinirane vrijednosti
 			line-height: 46px; /* [1] */
 			padding-top: 30px;
 		}

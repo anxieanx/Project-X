@@ -1,6 +1,12 @@
 .btn {
 	text-align: center;
 	border: 1px solid $primary-color;
+	// Ovo je mali projekt pa je ovo totalno legit, ali inace
+	// gledaj da sto vise stvari koje se vjerojatno ponavljaju kroz projekt
+	// stavljas u varijable zbog konzistencije, tipa ja bih mozda
+	// stavio u varijable fajl dio za BUTTONS i onda tamo
+	// napravio $button-border $button-radius i $button-padding or so,
+	// pa sam tako siguran da cu uvijek koristiti isti border radius itd
 	border-radius: 3px;
 	padding: 10px 20px;
 

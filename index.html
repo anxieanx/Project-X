@@ -13,9 +13,13 @@
 </head>
 
 <body>
-	
+
 <div class="container">
-	
+
+	<!-- Koristi html5 tagove, iako nije greska sve u DIV tagove,
+	cisto semantike radi, plus nikad ne znas ako gugl odluci staviti
+	u algoritam pretrazivanja da preferira webove s boljom sintaksom! -->
+	<!-- tu mozes koristiti <nav> za glavnu navigaciju https://developer.mozilla.org/hr/docs/Web/HTML/Element/nav -->
 	<div class="nav">
 		<div class="nav__logo">
 			<img src="img/alien_pixel.png" alt="logo" />
@@ -27,6 +31,7 @@
 		</ul>
 	</div>
 
+	<!-- tu mozes koristiti <header> -->
 	<div class="header">
 		<div class="header__title">
 			<h1>Client Feedback <br /> Has Never Been <br /> This Easy</h1>
@@ -37,7 +42,7 @@
 			</div>
 		</div>
 		<div class="header__img">
-			<img src="img/sunrise.jpg" alt="sunrise" />			
+			<img src="img/sunrise.jpg" alt="sunrise" />
 		</div>
 	</div>
 
@@ -50,6 +55,7 @@
 				<img src="img/robot.png" alt="robot" />
 			</div>
 			<div class="features__item">
+				<!-- Pojvala za pisanje alt tagova na fotkama, google loves it -->
 				<img src="img/alien_angry.png" alt="alien_angry" />
 				<p>You have to work really hard using Email and Screenshots to communicate with your clients</p>
 				<img src="img/rocket.png" alt="rocket" />
@@ -62,6 +68,7 @@
 		</div>
 	</div>
 
+	<!-- Tu pak mozes koristiti <section> tag ^^ -->
 	<div class="sections">
 		<div class="section">
 			<div class="section__text">
@@ -75,6 +82,7 @@
 		</div>
 
 		<div class="section">
+			<!-- Vrhunski BEM -->
 			<div class="section__text section__text--reverse">
 				<h1>Become your clients' best supplier - Charge more and get more work!</h1>
 				<p>Webscope was built as a simple visual tool so even the most technically-challenged clients will love working with your agency. Up your game by branding Webscope with your agency's colors and logo</p>
@@ -181,6 +189,7 @@
 	</div>
 </div>
 
+<!-- <footer> tag -->
 <div class="footer">
 	<ul>
 		<li><a href="#">Contact</a></li>

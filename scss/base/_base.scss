@@ -3,7 +3,10 @@
  */
 body {
 	color: $text-color;
+	// Mozes bez beda i font family strpati u varijable $base-font
+	// i $heading-font recimo
 	font-family: 'Raleway', sans-serif;
+	// odlicno, cak ni ja ne stignem koristiti ova obrazlozenja a trebao bih :))
 	line-height: 28px; /* [1] */
 	margin: 0;
 	padding: 0;
