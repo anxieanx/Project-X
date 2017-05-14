@@ -1,0 +1,9 @@
+/*------------------------------------*\
+** MIXIN ZA GENERIRANJE MEDIA QUERYJA
+\*------------------------------------*/
+
+@mixin breakpoint($name) {
+  @media only screen and (min-width : $name) {
+    @content;
+  }
+}

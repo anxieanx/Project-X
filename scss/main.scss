@@ -1,6 +1,7 @@
 @charset 'utf-8';
 
 @import 'abstracts/variables';
+@import 'abstracts/mixins';
 
 @import 'base/base';
 
@@ -12,7 +13,9 @@
 @import 'layout/cta';
 @import 'layout/features';
 @import 'layout/footer';
+@import 'layout/grid';
 @import 'layout/header';
+@import 'layout/layout';
 @import 'layout/nav';
 @import 'layout/footer';
 @import 'layout/pricing';

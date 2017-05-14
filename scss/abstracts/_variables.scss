@@ -1,4 +1,36 @@
+/*------------------------------------*\
+** COLORS
+\*------------------------------------*/
+
 $primary-color: #59c4f8;
 $background-color: #f9f9f9;
 $text-color: #222222;
 $cta-color: #ff3478;
+
+
+/*------------------------------------*\
+** RESPONSIVNESS AND GRID
+\*------------------------------------*/
+
+$small: 0;
+$medium: 640px;
+$large: 1024px;
+$xlarge: 1200px;
+$xxlarge: 1440px;
+
+$breakpoints: (
+	small   : $small,
+	medium  : $medium,
+	large   : $large,
+	xlarge  : $xlarge,
+	xxlarge : $xxlarge
+);
+
+
+/*------------------------------------*\
+** LAYOUT AND GRID
+\*------------------------------------*/
+
+$gutter: 1rem;
+$width: 100rem;
+$text-width: 50rem;
