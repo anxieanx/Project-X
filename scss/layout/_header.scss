@@ -1,28 +1,47 @@
 /**
  * 1. Magic nubmer, nema nikakve matematike jednostavno odgovara
- * 2. Isto
  */
 .header {
 	display: flex;
-	padding: 100px 0 50px 0;
+
+	@include breakpoint ($small) {
+		padding: 50px 0;
+	}
+	
+	@include breakpoint ($large) {
+		padding: 100px 0 50px 0;
+	}
 
 	&__title {
 
 		h1 {
-			line-height: 46px; /* [1] */
-			padding-top: 30px;
+			@include breakpoint ($small) {
+				line-height: 40px;
+				padding-top: 0;
+			}
+	
+			@include breakpoint ($large) {
+				line-height: 46px; /* [1] */
+				padding-top: 30px;
+			}
 		}
 
 		h2 {
-			line-height: 38px; /* [2] */
 			padding-bottom: 30px;
+
+			@include breakpoint ($small) {
+				line-height: 32px; /* [1] */
+			}
+	
+			@include breakpoint ($large) {
+				line-height: 38px; /* [1] */
+			}
 		}
 	}
 
 	&__btns {
 		display: flex;
 		justify-content: space-between;
-		padding-right: 80px;
 	}
 
 	&__img {

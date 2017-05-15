@@ -1,8 +1,18 @@
 .price {
-	font-size: 36px;
+	@include breakpoint ($small) {
+		font-size: 32px;
 
-	sup {
-		font-size: 20px;
+		sup {
+			font-size: 18px;
+		}
+	}
+	
+	@include breakpoint ($large) {
+		font-size: 36px;
+
+		sup {
+			font-size: 20px;
+		}
 	}
 
 	small {

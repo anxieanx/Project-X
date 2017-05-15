@@ -25,6 +25,24 @@ body {
   width: 70%;
   margin: 0 auto; }
 
+@media only screen and (min-width: 0) {
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
+    /* [1] */ } }
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 32px;
+    line-height: 50px;
+    /* [1] */ } }
+
+@media only screen and (min-width: 0) {
+  h2 {
+    font-size: 22px; } }
+@media only screen and (min-width: 1024px) {
+  h2 {
+    font-size: 24px; } }
+
 a {
   color: #222222;
   text-decoration: none;
@@ -47,8 +65,17 @@ a:hover {
     background-color: #f9f9f9; }
   .btn--secondary {
     color: #59c4f8;
-    flex-grow: 4;
     margin-left: 5px; }
+    @media only screen and (min-width: 0) {
+      .btn--secondary {
+        flex-grow: 2; } }
+    @media only screen and (min-width: 640px) {
+      .btn--secondary {
+        flex-grow: 1; } }
+    @media only screen and (min-width: 1024px) {
+      .btn--secondary {
+        flex-grow: 3;
+        margin-right: 80px; } }
   .btn--secondary:hover {
     color: #f9f9f9;
     background-color: #59c4f8; }
@@ -67,13 +94,19 @@ a:hover {
     padding: 10px;
     margin-left: -5px; }
 
-.price {
-  font-size: 36px; }
-  .price sup {
-    font-size: 20px; }
-  .price small {
-    color: #59c4f8;
-    font-size: 14px; }
+@media only screen and (min-width: 0) {
+  .price {
+    font-size: 32px; }
+    .price sup {
+      font-size: 18px; } }
+@media only screen and (min-width: 1024px) {
+  .price {
+    font-size: 36px; }
+    .price sup {
+      font-size: 20px; } }
+.price small {
+  color: #59c4f8;
+  font-size: 14px; }
 
 .best-tag {
   background-color: #ff3478;
@@ -85,37 +118,40 @@ a:hover {
   top: 0;
   right: 15px; }
 
-/**
- * 1. Magic nubmer, nema nikakve matematike jednostavno odgovara
- */
 .cta {
-  padding: 50px 0 100px 0;
+  padding: 30px 0 100px 0;
   text-align: center; }
   .cta h1 {
-    width: 500px;
-    line-height: 50px;
-    /* [1] */
-    margin: 0 auto;
-    padding-bottom: 50px; }
+    padding-bottom: 20px; }
 
 .features {
   text-align: center;
-  padding: 50px 0;
-  /*&__item {
-  	width: 26%;
-  }*/ }
+  padding: 50px; }
   .features__items {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around; }
-  .features__items img {
-    padding-top: 30px; }
+  .features__item {
+    padding: 15px; }
+  @media only screen and (min-width: 0) {
+    .features__item img {
+      width: 48px;
+      padding: 15px 0 5px 0; } }
+  @media only screen and (min-width: 1024px) {
+    .features__item img {
+      width: 64px;
+      padding: 30px 0 5px 0; } }
   .features--top {
     font-size: 18px; }
     .features--top h1 {
-      color: #59c4f8;
-      text-align: center; }
+      color: #59c4f8; }
+    .features--top p {
+      width: 280px;
+      margin: 0 auto; }
+  .features--bot p {
+    width: 240px;
+    margin: 0 auto; }
 
 .footer {
   color: #f9f9f9;
@@ -521,23 +557,37 @@ a:hover {
     flex-basis: calc( 100% * ( 12 / 12 ) ); } }
 /**
  * 1. Magic nubmer, nema nikakve matematike jednostavno odgovara
- * 2. Isto
  */
 .header {
-  display: flex;
-  padding: 100px 0 50px 0; }
-  .header__title h1 {
-    line-height: 46px;
-    /* [1] */
-    padding-top: 30px; }
+  display: flex; }
+  @media only screen and (min-width: 0) {
+    .header {
+      padding: 50px 0; } }
+  @media only screen and (min-width: 1024px) {
+    .header {
+      padding: 100px 0 50px 0; } }
+  @media only screen and (min-width: 0) {
+    .header__title h1 {
+      line-height: 40px;
+      padding-top: 0; } }
+  @media only screen and (min-width: 1024px) {
+    .header__title h1 {
+      line-height: 46px;
+      /* [1] */
+      padding-top: 30px; } }
   .header__title h2 {
-    line-height: 38px;
-    /* [2] */
     padding-bottom: 30px; }
+    @media only screen and (min-width: 0) {
+      .header__title h2 {
+        line-height: 32px;
+        /* [1] */ } }
+    @media only screen and (min-width: 1024px) {
+      .header__title h2 {
+        line-height: 38px;
+        /* [1] */ } }
   .header__btns {
     display: flex;
-    justify-content: space-between;
-    padding-right: 80px; }
+    justify-content: space-between; }
   @media only screen and (min-width: 0) {
     .header__img {
       display: none; } }
@@ -571,13 +621,22 @@ a:hover {
   display: flex;
   justify-content: space-between;
   padding-top: 20px; }
+  .nav ul {
+    margin: 0;
+    padding: 0; }
   .nav__logo img {
     width: 48px; }
   .nav__links li {
-    display: inline;
     list-style: none; }
-  .nav__links a {
-    padding: 10px 20px; }
+    @media only screen and (min-width: 640px) {
+      .nav__links li {
+        display: inline; } }
+  @media only screen and (min-width: 0) {
+    .nav__links a {
+      padding: 5px 10px; } }
+  @media only screen and (min-width: 640px) {
+    .nav__links a {
+      padding: 10px 20px; } }
 
 .footer {
   color: #f9f9f9;
@@ -601,7 +660,7 @@ a:hover {
     font-size: 12px; }
 
 .pricing {
-  padding: 50px 0; }
+  padding: 50px 0 30px 0; }
   .pricing h1 {
     text-align: center;
     padding-bottom: 30px; }
@@ -611,15 +670,24 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center; }
   .pricing__item {
-    /*width: 24%;*/
-    height: 400px;
     text-align: center;
     border: 1px solid #ccc;
-    padding: 30px 0 15px 0;
     position: relative; }
+    @media only screen and (min-width: 0) {
+      .pricing__item {
+        height: 400px;
+        padding: 15px 0; } }
+    @media only screen and (min-width: 1024px) {
+      .pricing__item {
+        height: 450px;
+        padding: 30px 0 15px 0; } }
     .pricing__item p {
       color: #a2abb1;
       padding-bottom: 30px; }
+    .pricing__item ul {
+      width: 200px;
+      margin: 0 auto;
+      padding: 0; }
     .pricing__item li {
       color: #a2abb1;
       font-size: 14px;
@@ -630,44 +698,56 @@ a:hover {
       color: #5deb92; }
     .pricing__item h3 {
       position: absolute;
-      bottom: 60px;
       left: 50%;
       margin-left: -50px; }
+      @media only screen and (min-width: 0) {
+        .pricing__item h3 {
+          bottom: 50px; } }
+      @media only screen and (min-width: 1024px) {
+        .pricing__item h3 {
+          bottom: 60px; } }
     .pricing__item .btn {
       position: absolute;
       bottom: 20px;
       right: 50%;
       margin-right: -63px; }
 
-/**
- * 1. Magic nubmer, nema nikakve matematike jednostavno odgovara
- */
 .sections {
   padding-bottom: 50px;
   margin-left: -21.4%;
   margin-right: -21.4%; }
 
 .section {
-  display: flex;
-  margin-top: 100px; }
+  display: flex; }
+  @media only screen and (min-width: 0) {
+    .section {
+      margin-top: 30px; } }
+  @media only screen and (min-width: 1024px) {
+    .section {
+      margin-top: 100px; } }
   .section__text {
-    width: 40%;
-    text-align: center;
-    padding: 50px; }
-    .section__text--reverse {
-      order: 2; }
-    .section__text h1 {
-      line-height: 50px;
-      /* [1] */ }
+    text-align: center; }
     .section__text hr {
       width: 50%; }
-  .section__img {
-    width: 60%; }
-    .section__img--reverse {
-      order: 1; }
+    @media only screen and (min-width: 0) {
+      .section__text {
+        padding: 30px; }
+        .section__text--reverse {
+          order: 1; } }
+    @media only screen and (min-width: 1024px) {
+      .section__text {
+        padding: 50px; }
+        .section__text--reverse {
+          order: 2; } }
   .section__img img {
     max-width: 100%;
     border-radius: 3px;
     box-shadow: 0 3px 8px 0 rgba(34, 34, 34, 0.6); }
+  @media only screen and (min-width: 0) {
+    .section__img--reverse {
+      order: 2; } }
+  @media only screen and (min-width: 1024px) {
+    .section__img--reverse {
+      order: 1; } }
 
 /*# sourceMappingURL=main.css.map */

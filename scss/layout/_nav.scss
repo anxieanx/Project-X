@@ -2,17 +2,31 @@
 	display: flex;
 	justify-content: space-between;
 	padding-top: 20px;
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
 	
 	&__logo img {
 		width: 48px;
 	}
 
 	&__links li {
-		display: inline;
 		list-style: none;
+
+		@include breakpoint ($medium) {
+			display: inline;
+		}
 	}
 
 	&__links a {
-		padding: 10px 20px;
+		@include breakpoint ($small) {
+			padding: 5px 10px;
+		}
+
+		@include breakpoint ($medium) {
+			padding: 10px 20px;
+		}
 	}
 }
